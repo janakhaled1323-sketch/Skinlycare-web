@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skinlycare - Contact Us</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/navBar.css">
+
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/images/HOME/QpWqZMydbosjWnOC7FCUyQwyE.avif">
+
+    <style>
+        /* ==========================================
+           1. Root Variables & Reset
+           ========================================== */
+        :root {
+            --bg-cream: #FAF6F0;
+            --text-dark: #000000;
+            --green-primary: #334A33;
+            --card-bg: #FFFFFF;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --badge-bg: var(--green-primary);
+            --badge-text: #FFFFFF;
+        }
+        body.dark-mode {
+            --bg-cream: #121413;
+            --text-dark: #FFFFFF;
+            --card-bg: #1B1E1C;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --badge-bg: var(--green-primary);
+            --badge-text: #FFFFFF;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            font-family: 'DM Sans', sans-serif;
+            padding-top: 100px;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        .frame {
+            width: 13%;
+            height: 5.5vh;
+            background-color: #FFFCF8;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1px;
+            padding: 0px 16px;
+            margin-bottom: 3vh;
+            border: 1px solid #4a4a4a71;
+            border-radius: 50px;
+            font-size: 90%;
+            color: var(--colorGreen);
+            font-family: var(--otherFont);
+        }
+
+        /* ==========================================
+           Contact Section
+           ========================================== */
+        .contact-section {
+            max-width: 1240px;
+            margin: 40px auto 80px auto;
+            padding: 0 24px;
+        }
+        .contact-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .blog-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 26px;
+            background-color: transparent;
+            border: 1.2px solid #A8B2A4;
+            border-radius: 50px;
+            margin-bottom: 24px;
+        }
+        .badge-leaf-icon {
+            width: 22px;
+            height: 22px;
+        }
+        .badge-text {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #2D3B2D;
+        }
+        body.dark-mode .badge-text {
+            color: #FFFFFF;
+        }
+        .contact-main-title {
+            font-family: "Lora", serif;
+            font-size: 56px;
+            font-weight: 500;
+            line-height: 1.15;
+            color: #1C1812;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .contact-subtitle {
+            font-family: "Inter", "Inter Placeholder", sans-serif;
+            font-size: 16px;
+            color: #858382;
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+        /* ==========================================
+           Contact Grid
+           ========================================== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        /* ==========================================
+           Contact Info Cards
+           ========================================== */
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact-info-card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 32px 28px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+        }
+        .contact-icon-box {
+            width: 44px;
+            height: 44px;
+            background-color: #2D3B2D;
+            color: #FFFFFF;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .contact-info-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .contact-info-card p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            color: var(--text-dark);
+            opacity: 0.7;
+        }
+        /* ==========================================
+           Contact Form
+           ========================================== */
+        .contact-form-card {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            background-color: #F8F8F8;
+            border: 1px solid transparent;
+            border-radius: 12px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: #333333;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        body.dark-mode .form-group input,
+        body.dark-mode .form-group textarea {
+            background-color: #252927;
+            color: #FFFFFF;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            background-color: var(--card-bg);
+            border-color: #2D3B2D;
+        }
+        .contact-submit-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #2D3B2D;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 12px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-submit-btn:hover {
+            background-color: #1f2a1f;
+        }
+        /* ==========================================
+           Responsive Design
+           ========================================== */
+        @media (max-width: 992px) {
+            .frame {
+                width: 16vw;
+                height: 6vh;
+                font-size: 1.7vw;
+            }
+            /**
+               تحويل الترتيب لتظهر الاستمارة فوق والكروت تحتها عند استخدام Wrap
+            **/
+            .contact-grid {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 30px;
+            }
+            .contact-info-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .contact-form-card {
+                width: 100%;
+            }
+            .faq-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+            .faq-left {
+                max-width: 100%;
+            }
+            .faq-main-title {
+                font-size: 38px;
+            }
+        }
+        /* ==========================================
+           Mobile
+           ========================================== */
+        @media (max-width: 576px) {
+            .frame {
+                width: 31vw;
+                height: 5.5vh;
+                font-size: 3.4vw;
+            }
+            .contact-main-title {
+                font-size: 36px;
+            }
+            .contact-info-list {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .contact-form-card {
+                padding: 24px;
+            }
+        }
+
+        .reveal-section > * {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 0.8s ease;
+        }
+        .reveal-section.show > * {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-section.show > *:nth-child(1) {
+            transition-delay: 0.2s;
+        }
+        .reveal-section.show > *:nth-child(2) {
+            transition-delay: 0.4s;
+        }
+        .reveal-section.show > *:nth-child(3) {
+            transition-delay: 0.6s;
+        }
+        .reveal-section.show > *:nth-child(4) {
+            transition-delay: 0.8s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- Contact Us Section -->
+
+    <section class="contact-section" id="contact-us">
+
+        <div class="contact-header reveal-section">
+
+           <div class="frame">
+
+                <i class="fa-brands fa-envira"></i>
+
+                <p>Contact us</p>
+
+            </div>
+
+            <h1 class="contact-main-title">
+
+                <span>Let's Talk About</span>
+
+                <span>Your Skin</span>
+
+            </h1>
+
+            <p class="contact-subtitle">
+
+                Get expert skincare guidance and discover<br>
+
+                the path to healthy, glowing skin.
+
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- Contact Information -->
+
+            <div class="contact-info-list reveal-section">
+
+                <!-- Card 1 -->
+
+                <div class="contact-info-card">
+
+                    <div class="contact-icon-box">
+
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+
+                            <polyline points="22,6 12,13 2,6"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>Email Address:</h3>
+
+                    <p>riham Abdelnasserlikhan090@gmail.com</p>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="contact-info-card">
+
+                    <div class="contact-icon-box">
+
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    </div>
+
+                    <h3>Phone Number:</h3>
+
+                    <p>+92 123 456 789</p>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="contact-info-card">
+
+                    <div class="contact-icon-box">
+
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+
+                            <circle cx="12" cy="10" r="3"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>Location:</h3>
+
+                    <p>Sydney, NSW, Australia</p>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form-card reveal-section">
+
+                <form id="contactForm ">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="firstName">Name</label>
+
+                            <input type="text" id="firstName" placeholder="First Name" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="lastName">Last Name</label>
+
+                            <input type="text" id="lastName" placeholder="Last Name" required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="contactEmail">Email</label>
+
+                        <input type="email" id="contactEmail" placeholder="email@gmail.com" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="phone">Phone Number</label>
+
+                        <input type="tel" id="phone" placeholder="+20 123 456 ...." required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea id="message" rows="4" placeholder="Write your message here.." required></textarea>
+
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Submit</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="site-components"></div>
+
+    <!-- JavaScript Script -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            /* Theme Toggle */
+
+            const themeToggleBtn = document.getElementById("theme-toggle");
+
+            if (themeToggleBtn) {
+
+                themeToggleBtn.addEventListener("click", () => {
+
+                    document.body.classList.toggle("dark-mode");
+
+                    const isDark = document.body.classList.contains("dark-mode");
+
+                    themeToggleBtn.textContent = isDark ? "☀️" : "🌙";
+
+                });
+
+            }
+
+            /* Search Box Toggle */
+
+            const searchToggleBtn = document.getElementById("searchToggle");
+
+            const searchBox = document.getElementById("searchBox");
+
+            if (searchToggleBtn && searchBox) {
+
+                searchToggleBtn.addEventListener("click", () => {
+
+                    searchBox.classList.toggle("open");
+
+                });
+
+            }
+
+            /* No Leading Spaces Logic */
+
+            const formInputs = document.querySelectorAll(
+
+                '#contactForm input, #contactForm textarea'
+
+            );
+
+            formInputs.forEach(input => {
+
+                input.addEventListener('keydown', (e) => {
+
+                    if (e.key === ' ' && input.selectionStart === 0) {
+
+                        e.preventDefault();
+
+                    }
+
+                });
+
+                input.addEventListener('input', () => {
+
+                    if (input.value.startsWith(' ')) {
+
+                        input.value = input.value.trimStart();
+
+                    }
+
+                });
+
+            });
+
+            /* Contact Form Validation */
+
+            const contactForm = document.getElementById("contactForm");
+
+            const emailInput = document.getElementById("contactEmail");
+
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (contactForm && emailInput) {
+
+                contactForm.addEventListener("submit", (e) => {
+
+                    const emailValue = emailInput.value.trim();
+
+                    if (!emailRegex.test(emailValue)) {
+
+                        e.preventDefault();
+
+                        alert("Please enter a valid email address (e.g. name@domain.com)");
+
+                        emailInput.focus();
+
+                        emailInput.style.borderColor = "red";
+
+                    } else {
+
+                        emailInput.style.borderColor = "";
+
+                        alert("Thank you! Your message has been sent successfully.");
+
+                    }
+
+                });
+
+                emailInput.addEventListener("input", () => {
+
+                    if (emailRegex.test(emailInput.value.trim())) {
+
+                        emailInput.style.borderColor = "";
+
+                    }
+
+                });
+
+            }
+
+            /* FAQ Accordion Toggle */
+
+            const faqQuestions = document.querySelectorAll(".faq-question");
+
+            faqQuestions.forEach(btn => {
+
+                btn.addEventListener("click", () => {
+
+                    const currentItem = btn.parentElement;
+
+                    const isActive = currentItem.classList.contains("active");
+
+                    document.querySelectorAll(".faq-item").forEach(item => {
+
+                        item.classList.remove("active");
+
+                    });
+
+                    if (!isActive) {
+
+                        currentItem.classList.add("active");
+
+                    }
+
+                });
+
+            });
+
+        });
+
+        const sections = document.querySelectorAll(".reveal-section");
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                }
+
+            });
+
+        }, {
+
+            threshold: 0.2
+
+        });
+
+        sections.forEach(section => observer.observe(section));
+
+    </script>
+
+    <script src="./assets/js/navBar.js"></script>
+
+    <script src="./assets/js/footer.js"></script>
+
+    <script src="./assets/js/data.js"></script>
+
+    <script src="./assets/js/cart.js"></script>
+
+    <script src="./assets/js/wishlist.js"></script>
+
+</body>
+
+</html>
